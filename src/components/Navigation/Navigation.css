@@ -1,0 +1,239 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 7.222222222222221% 13px;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.nav__type_dark {
+  box-shadow: inset 0px -1px 0px #d1d2d6;
+}
+
+.nav__logo {
+  max-width: 137px;
+}
+
+.nav__logo-link {
+  max-width: 137px;
+  display: flex;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu {
+  list-style-type: none;
+  padding: 0 42px 0px 0;
+  margin: 0;
+  display: flex;
+  gap: 66px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.nav__link-item {
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 24px 32px 27px 32px;
+}
+
+.nav__link_dark {
+  color: #1a1b22;
+}
+
+.nav__link_active {
+  box-shadow: inset 0px -3px 0px rgba(255, 255, 255);
+}
+
+.nav__link_dark_active {
+  box-shadow: inset 0px -3px 0px rgb(26, 27, 34);
+}
+
+.nav__btn {
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+  background: none;
+  padding: 12px 60px 12px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.nav__btn_type_logged {
+  padding: 12px 19px 12px;
+}
+
+.nav__btn_dark {
+  color: #1a1b22;
+  border: 1px solid #1a1b22;
+}
+
+.nav__user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav__user-logout {
+  width: 24px;
+  height: 24px;
+}
+
+.nav__mobile-hamburger-btn {
+  display: none;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  box-sizing: border-box;
+  background: none;
+  background-image: url(../../images//hamburger_icon_light.svg);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
+  border: none;
+  transition: opacity 0.3s linear;
+}
+
+.nav__mobile-hamburger-btn_type_dark {
+  background-image: url(../../images//hamburger_icon_dark.svg);
+}
+
+@media screen and (max-width: 890px) {
+  .nav {
+    padding: 19px 40px 12px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+    padding: 24px 29px 23px 29px;
+  }
+  .nav__btn {
+    font-size: 16px;
+    line-height: 1.33;
+    padding: 8px 51px 8px;
+  }
+
+  .nav__btn_type_logged {
+    padding: 8px 15px 8px;
+  }
+
+  .nav__menu {
+    padding: 0 18px 0px 0;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav {
+    padding: 19px 16px 12px;
+  }
+
+  .nav__link {
+    padding: 24px 10px 23px 10px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .nav {
+    padding: 16px;
+  }
+
+  .nav__logo {
+    max-width: 117px;
+  }
+
+  .nav__logo-link {
+    max-width: 117px;
+    display: flex;
+  }
+
+  .nav__wrapper {
+    display: none;
+  }
+
+  .nav__type_mobile {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1a1b22;
+    z-index: 4;
+    box-sizing: border-box;
+  }
+
+  .nav__mobile-hamburger-btn {
+    display: block;
+  }
+
+  .nav__mobile-hamburger-btn_inactive {
+    visibility: hidden;
+  }
+
+  .nav__type_mobile-menu {
+    background-color: #1a1b22;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav__mobile-nav {
+    width: 100%;
+    background-color: #1a1b22;
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .nav__mobile-menu {
+    list-style: none;
+    margin-bottom: 22px;
+    padding: 0;
+  }
+
+  .nav__mobile-nav-link {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 3.11;
+    text-decoration: none;
+  }
+
+  .nav__mobile-nav-btn {
+    padding: 16px 0 16px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__mobile-nav-header {
+    max-width: 100%;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+    padding: 19px 16px 16px 16px;
+    background-color: #1a1b22;
+  }
+}

@@ -1,0 +1,13 @@
+.savednews {
+  max-width: 100%;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background-color: #f5f6f7;
+}
+
+@media screen and (max-width: 890px) {
+  .savednews {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
