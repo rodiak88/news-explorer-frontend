@@ -24,6 +24,7 @@ function SigninPopup({ ...props }) {
         submitButtonText='Sign in'
         secondaryButtonText='Sign up'
         onSecondaryButtonClick={openSignUpPopup}
+        isButtonDisabled={true}
       >
         <label className='popup__input-label'>Enter email</label>
         <input

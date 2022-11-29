@@ -1,5 +1,5 @@
 import './NotFound.css';
-import notFound from '../../images/not_found.png';
+import notFound from '../../images/not_found.svg';
 
 function NotFound() {
   return (

@@ -25,7 +25,11 @@ function NewsCard({ card }) {
             className={`card__button ${
               isSavedPage
                 ? 'card__button_type_delete'
-                : 'card__button_type_bookmark'
+                : `${
+                    card.isSaved
+                      ? 'card__button_type_bookmark_marked'
+                      : 'card__button_type_bookmark'
+                  }`
             }`}
           >
             {' '}

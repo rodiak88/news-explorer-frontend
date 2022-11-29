@@ -3,19 +3,19 @@ import React from 'react';
 
 function SearchForm() {
   return (
-    <>
-      <form className='searchForm__form'>
+    <div className='search-form'>
+      <form className='search-form__form'>
         <input
           type='text'
           name='search-input'
           id='search-input'
-          className='searchForm__input'
+          className='search-form__input'
           placeholder='Enter topic'
           required
         />
-        <button className='searchForm__btn'>Search</button>
+        <button className='search-form__btn'>Search</button>
       </form>
-    </>
+    </div>
   );
 }
 

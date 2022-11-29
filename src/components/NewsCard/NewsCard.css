@@ -82,6 +82,10 @@
   background-image: url('../../images/bookmark_icon_hover.svg');
 }
 
+.card__button_type_bookmark_marked {
+  background-image: url('../../images/bookmark_icon_marked.svg');
+}
+
 .card__tooltip {
   opacity: 0;
   height: 40px;

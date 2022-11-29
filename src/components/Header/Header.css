@@ -52,6 +52,7 @@
 
   .header__title {
     font-size: 36px;
+    margin: 0 0 16px 0;
   }
 
   .header__text {
@@ -68,10 +69,6 @@
 
   .header__container_nav-open {
     padding-top: 86px;
-  }
-
-  .header__title {
-    margin: 0 0 16px 0;
   }
 
   .header__text {

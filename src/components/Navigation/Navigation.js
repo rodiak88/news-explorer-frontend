@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Navigation.css';
-import { useLocation } from 'react-router-dom';
 import lightLogo from '../../images/logo_light.svg';
 import darkLogo from '../../images/logo_dark.svg';
 import logoutIconLight from '../../images/logout_icon_light.svg';
@@ -19,12 +18,6 @@ function Navigation() {
   const { openSignInPopup } = usePopups().popups.signInPopup;
   const { isAnyPopupOpen } = usePopups();
 
-  const location = useLocation().pathname;
-
-  useEffect(() => {
-    closeMobileNav();
-  }, [location]);
-
   function handleHamburgerMenuClick() {
     isMobileNavOpen ? closeMobileNav() : openMobileNav();
   }
@@ -41,7 +34,11 @@ function Navigation() {
           isMobileNavOpen && 'nav__type_mobile'
         }`}
       >
-        <Link to='/' className='nav__logo-link'>
+        <Link
+          to='/'
+          onClick={isMobileNavOpen && closeMobileNav}
+          className='nav__logo-link'
+        >
           <img
             src={isSavedPage && !isMobileNavOpen ? darkLogo : lightLogo}
             className='nav__logo'
@@ -121,7 +118,12 @@ function Navigation() {
           <nav className='nav__mobile-nav'>
             <ul className='nav__mobile-menu'>
               <li className='nav__mobile-menu-item'>
-                <NavLink exact to='/' className='nav__mobile-nav-link'>
+                <NavLink
+                  exact
+                  to='/'
+                  onClick={closeMobileNav}
+                  className='nav__mobile-nav-link'
+                >
                   Home
                 </NavLink>
               </li>
@@ -130,6 +132,7 @@ function Navigation() {
                   <NavLink
                     exact
                     to='/saved-news'
+                    onClick={closeMobileNav}
                     className='nav__mobile-nav-link'
                   >
                     Saved articles

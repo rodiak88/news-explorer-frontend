@@ -1,8 +1,14 @@
 import './SubmitButton.css';
 
-function SubmitButton({ buttonText }) {
+function SubmitButton({ buttonText, isDisabled }) {
   return (
-    <button type='submit' className='submit-btn'>
+    <button
+      type='submit'
+      className={
+        isDisabled ? 'submit-btn submit-btn_type_disabled' : 'submit-btn'
+      }
+      disabled={isDisabled}
+    >
       {buttonText}
     </button>
   );

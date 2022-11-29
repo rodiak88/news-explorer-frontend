@@ -21,7 +21,10 @@ function PopupWithForm({
       <h2 className='popup__title'>{props.title}</h2>
       <form id={name} name={name} className='popup__form' onSubmit={onSubmit}>
         <fieldset className='popup__fieldset'>{children}</fieldset>
-        <SubmitButton buttonText={props.submitButtonText} />
+        <SubmitButton
+          buttonText={props.submitButtonText}
+          isDisabled={props.isButtonDisabled}
+        />
       </form>
       <p className='popup__text'>
         or{' '}
