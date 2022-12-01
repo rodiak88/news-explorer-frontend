@@ -1,0 +1,51 @@
+.search-results {
+  max-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5f6f7;
+}
+
+.search-results__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 0 104px 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.search-results__title {
+  font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.15;
+  color: #1a1b22;
+  margin: 0;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 890px) {
+  .search-results {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .search-results__container {
+    padding: 0 40px 0;
+    gap: 32px;
+  }
+
+  .search-results__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .search-results__container {
+    max-width: 288px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}

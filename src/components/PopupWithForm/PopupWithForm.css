@@ -1,0 +1,116 @@
+.popup__title {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.16;
+  color: #1a1b22;
+  margin: 0;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 22px 0 39px;
+  border: none;
+}
+
+.popup__input {
+  width: 100%;
+  outline: none;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  transition: border-bottom 0.3s linear;
+  padding: 0 0 9px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.popup__input::placeholder {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.popup__input:focus {
+  border-bottom: 1px solid #000;
+}
+
+.popup__input-label {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #2f71e5;
+  padding: 0;
+  margin: 31px 0 9px;
+}
+
+.popup__input-label:first-of-type {
+  margin: 0 0 9px;
+}
+
+.popup__input-error {
+  display: none;
+  max-width: 100%;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #ff0000;
+  margin: 3px 0 0;
+  padding: 0;
+}
+
+.popup__input-error_active {
+  display: block;
+}
+
+.popup__text {
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.popup__link-btn {
+  border: none;
+  background: none;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #2f71e5;
+  padding: 0;
+  margin: 0;
+  max-width: fit-content;
+}
+
+.popup__link-btn:hover {
+  cursor: pointer;
+  color: #347eff;
+}
