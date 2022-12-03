@@ -1,6 +1,7 @@
 .search-form {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .search-form__form {
@@ -53,6 +54,21 @@
   background-color: #2a65cc;
 }
 
+.search-form__error {
+  max-width: 100%;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #ff0000;
+  margin: 0 auto 3px;
+  padding: 0;
+  position: absolute;
+  bottom: 2px;
+  left: 21px;
+}
+
 @media screen and (max-width: 890px) {
   .search-form__input {
     padding: 17px 21px;
@@ -79,5 +95,10 @@
 
   .search-form__btn {
     width: 100%;
+  }
+
+  .search-form__error {
+    bottom: 71px;
+    font-size: 10px;
   }
 }

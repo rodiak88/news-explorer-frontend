@@ -1,5 +1,4 @@
 import './Footer.css';
-import React from 'react';
 import fbIcon from '../../images/fb_icon.svg';
 import gitIcon from '../../images/github_icon.svg';
 

@@ -14,6 +14,13 @@ const useSignUpPopup = () => {
   return { isSignUpPopupOpen, openSignUpPopup, closeSignUpPopup };
 };
 
+const useMessagePopup = () => {
+  const [isMessagePopupOpen, setIsMessagePopupOpen] = useState(false);
+  const openMessagePopup = () => setIsMessagePopupOpen(true);
+  const closeMessagePopup = () => setIsMessagePopupOpen(false);
+  return { isMessagePopupOpen, openMessagePopup, closeMessagePopup };
+};
+
 const useMobileNav = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const openMobileNav = () => setIsMobileNavOpen(true);
@@ -21,4 +28,4 @@ const useMobileNav = () => {
   return { isMobileNavOpen, openMobileNav, closeMobileNav };
 };
 
-export { useSignInPopup, useSignUpPopup, useMobileNav };
+export { useSignInPopup, useSignUpPopup, useMessagePopup, useMobileNav };

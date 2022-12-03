@@ -7,18 +7,21 @@ import { BrowserRouter } from 'react-router-dom';
 import IsSavedPageContextProvider from './contexts/IsOnSavedPageContext';
 import AuthContextProvider from './contexts/AuthContext';
 import { PopupsContextProvider } from './contexts/PopupsContext';
+import ArticlesContextProvider from './contexts/ArticlesContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthContextProvider>
-        <PopupsContextProvider>
-          <IsSavedPageContextProvider>
-            <App />
-          </IsSavedPageContextProvider>
-        </PopupsContextProvider>
-      </AuthContextProvider>
+      <PopupsContextProvider>
+        <AuthContextProvider>
+          <ArticlesContextProvider>
+            <IsSavedPageContextProvider>
+              <App />
+            </IsSavedPageContextProvider>
+          </ArticlesContextProvider>
+        </AuthContextProvider>
+      </PopupsContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

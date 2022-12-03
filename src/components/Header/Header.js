@@ -1,12 +1,11 @@
 import './Header.css';
-import React from 'react';
 import Navigation from '../Navigation/Navigation';
 import SearchForm from '../SearchForm/SearchForm';
 import SavedNewsHeader from '../SavedNewsHeader/SavedNewsHeader';
 import { useLocation } from 'react-router-dom';
 import { usePopups } from '../../contexts/PopupsContext';
 
-function Header() {
+function Header({ onSearch }) {
   const location = useLocation().pathname;
   const { isMobileNavOpen } = usePopups().popups.mobileNav;
 
@@ -30,7 +29,7 @@ function Header() {
             Find the latest news on any topic and save them in your personal
             account.
           </p>
-          <SearchForm />
+          <SearchForm onSearch={onSearch} />
         </div>
       )}
     </header>
