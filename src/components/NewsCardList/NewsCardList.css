@@ -44,6 +44,10 @@
   cursor: default;
 }
 
+.news-cards-list__button_inactive {
+  display: none;
+}
+
 @media screen and (max-width: 890px) {
   .news-cards-list__cards {
     grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));

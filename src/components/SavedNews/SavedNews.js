@@ -1,12 +1,13 @@
 import './SavedNews.css';
-import React from 'react';
 import NewsCardList from '../NewsCardList/NewsCardList';
-import { data } from '../../utils/data';
+import { useArticles } from '../../contexts/ArticlesContext';
 
 function SavedNews() {
+  const { savedArticles } = useArticles();
+
   return (
     <section className='savednews'>
-      <NewsCardList data={data} />
+      <NewsCardList data={savedArticles} />
     </section>
   );
 }

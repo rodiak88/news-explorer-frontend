@@ -1,4 +1,3 @@
-import React from 'react';
 import './Navigation.css';
 import lightLogo from '../../images/logo_light.svg';
 import darkLogo from '../../images/logo_dark.svg';
@@ -34,11 +33,7 @@ function Navigation() {
           isMobileNavOpen && 'nav__type_mobile'
         }`}
       >
-        <Link
-          to='/'
-          onClick={isMobileNavOpen && closeMobileNav}
-          className='nav__logo-link'
-        >
+        <Link to='/' onClick={closeMobileNav} className='nav__logo-link'>
           <img
             src={isSavedPage && !isMobileNavOpen ? darkLogo : lightLogo}
             className='nav__logo'
